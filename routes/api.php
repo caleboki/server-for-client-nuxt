@@ -46,3 +46,7 @@ Route::post('tags', 'TagController@store');
 Route::get('tags/{id}', 'TagController@show');
 Route::put('tags/{id}', 'TagController@update');
 Route::delete('tags/{id}', 'TagController@destroy');
+
+Route::get('test', function () {
+    return 'testing api route';
+});
